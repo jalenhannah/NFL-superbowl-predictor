@@ -1,10 +1,13 @@
 # NFL Super Bowl Predictor 🏈
-Baseline Python project using an Elo rating model + simple playoff simulation.
 
-## Quickstart
-```bash
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-python src/train.py
-python src/simulate_playoffs.py --season 2026 --runs 5000
+This project predicts the probability of each NFL team winning the Super Bowl using an Elo rating model and simulated playoff brackets.
+
+## How It Works
+1. `src/train.py` processes `data/games.csv` and generates updated Elo ratings.
+2. `src/simulate_playoffs.py` uses the Elo model to simulate thousands of playoff outcomes.
+3. The simulation results are saved in `outputs/sb_probs_<season>.csv`.
+
+---
+
+## File Structure
+
