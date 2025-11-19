@@ -11,3 +11,10 @@ This project predicts the probability of each NFL team winning the Super Bowl us
 
 ## File Structure
 
+SPRINT 2
+Refactored train.py with functions, docstrings, and input validation
+ Implemented Elo win probability logic in simulations
+ Added full playoff bracket simulation
+ Updated ROADMAP.md with progress and emerging tasks
+ Add visualization script for probability charts
+ Add argument for choosing seeding format
