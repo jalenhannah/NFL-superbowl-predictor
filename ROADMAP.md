@@ -1,32 +1,37 @@
 # Project Roadmap — NFL Super Bowl Predictor
 
-### Sprint Objective
-Create a predictive model that uses Elo ratings to simulate NFL playoff brackets and estimate Super Bowl probabilities.
+This roadmap tracks planned tasks, completed work, and new tasks discovered during Sprint 2.
 
 ---
 
-### ✅ Completed Tasks
-- [x] Created project team in KSU-IS GitHub organization
-- [x] Cloned project repository to local machine
-- [x] Researched Elo rating system
-- [x] Generated game-level Elo ratings from `games.csv`
-- [x] Implemented `EloModel` in `src/models/elo.py`
-- [x] Created training script (`src/train.py`) to build `elo_ratings.csv`
-- [x] Implemented playoff simulation (`src/simulate_playoffs.py`)
-- [x] Ensured reproducible environment with `requirements.txt`
-- [x] Ran simulation and exported Super Bowl probability results
+## Sprint 2 Progress (Updated)
+
+### ✔ Completed Work
+- [x] Refactored `train.py` into clean functions with docstrings and comments
+- [x] Fixed CSV column names to match `games.csv` (`home`, `away`, `home_pts`, `away_pts`)
+- [x] Implemented Elo-based win probability logic in `simulate_game()`
+- [x] Added full elimination-bracket logic in `simulate_bracket()`
+- [x] Updated README.md with installation instructions, usage examples, and project overview
 
 ---
 
-### 🎯 Next Sprint Tasks (Planned)
-- [ ] Add visualization of probability outcomes (`matplotlib` or `seaborn`)
-- [ ] Expand playoff format to all 14 playoff teams
-- [ ] Add UI/Website front-end (optional stretch goal)
+##  In Progress
+- [ ] Add visualization script to graph Super Bowl win probabilities
+- [ ] Improve input validation for playoff brackets
+- [ ] Add command-line options for choosing bracket size or custom seeds
 
 ---
 
-### 👤 Team Member Roles
-| Name | Role | Responsibilities |
-|------|------|------------------|
-| Jalen Hannah | Developer / Analyst | Coding, Elo model logic, simulation testing, documentation |
+## ➕ Emerging Tasks (Added During Sprint 2)
+- [ ] Add a configuration file for setting number of simulations, k-factor, and home advantage
+- [ ] Create unit tests for EloModel to verify update behavior
+- [ ] Allow logging levels to be adjusted (INFO → DEBUG)
+- [ ] Add support for saving simulation outputs with timestamps
+
+---
+
+## Sprint Goal
+Produce a fully functioning Elo-based NFL playoff simulator that:
+- Trains Elo ratings from real historical data  
+- Simulates thousands of playoff b
 
