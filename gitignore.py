@@ -1,8 +1,3 @@
-.venv/
-__pycache__/
-*.pyc
-outputs/
-.DS_Store
 # Python cache files
 __pycache__/
 *.pyc
